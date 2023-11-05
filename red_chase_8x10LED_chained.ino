@@ -14,7 +14,7 @@ void setup() {
 void loop() {
   // Chase a single green light down the LED strip
   for(int i = 0; i < strip.numPixels(); i++) { // For each pixel...
-    strip.setPixelColor(i, strip.Color(0, 255, 0)); // Set the pixel to green
+    strip.setPixelColor(i, strip.Color(255, 0, 0, 0)); // Set the pixel to green
     strip.show();                                   // Update the strip
     delay(50);                                      // Pause for a moment
     strip.setPixelColor(i, strip.Color(0, 0, 0));   // Turn off the pixel
